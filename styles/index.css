@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: url('../img/fundo.jpg'); /* Substitua 'seu_fundo.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa enquanto a página rola */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #1c2130;
+    --green: #028f76;
+    --lightGreen: #b3e099;
+    --yellow: #ffeaad;
+    --red: #d14334;
+}
+h1 {
+    color: var(--blue);
+    color: blue;
+}
+
+.visitade {
+    color: blue;
+}
+
+body {
+    background-color: var(--yellow);
+    font-size: 1.2rem;
+    
+    /* position: relative; */
+}
+
+#board {
+    width: 100%;
+    max-width: 480px;
+    height: 100px;
+    max-height: 480px;
+    border: 5px solid var(--blue);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 5%;
+    background-color: var(--blue);
+    /* box-shadow: 5px 5px 0px 0px var(--blue); */
+
+}
+
+.block {
+    width: 118px;
+    height: 118px;
+    border: 1px solid var(--blue);
+    overflow: hidden;
+    background-color: var(--blue);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    max-width: 50%;
+    align-self: center;
+    padding: 10px 50px;
+    background-color: var(--blue);
+    color: var(--yellow);
+    border: none;
+    box-shadow: 5px 5px 0px 0px var(--blue);
+    font-size: 1rem;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+    display: none;
+}
+
+
+#movesCounter {
+    display: none;
+    justify-content: center;
+    margin: 5px;
+    max-width: 50%;
+    min-width: 230px;
+    align-self: center;
+    padding: 10px 50px;
+    background-color: var(--blue);
+    color: var(--yellow);
+    border: none;
+    box-shadow: 5px 5px 0px 0px var(--blue);
+
+}
+
+.finished {
+    display: none;
+    justify-content: center;
+    margin: 5px;
+    max-width: 50%;
+    min-width: 230px;
+    align-self: center;
+    padding: 10px 50px;
+    background-color: var(--blue);
+    color: var(--yellow);
+    border: none;
+    box-shadow: 5px 5px 0px 0px var(--blue);
+    flex-direction: column;
+}
+
+#alert {
+    position: fixed;
+    top: 25%;
+    display: none;
+    justify-content: center;
+    margin: 5px;
+    max-width: 50%;
+    min-width: 230px;
+    align-self: center;
+    padding: 10px 50px;
+    background-color: var(--blue);
+    color: var(--yellow);
+    border: none;
+    box-shadow: 5px 5px 0px 0px var(--blue);
+}
+
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerButton {
+    box-shadow: none;
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+
+
+.share {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    max-width: 50%;
+    min-width: 230px;
+    align-self: center;
+    padding: 10px 50px;
+    background-color: var(--blue);
+    color: var(--yellow);
+    border: none;
+    box-shadow: 5px 5px 0px 0px var(--blue);
+}
+
+#help {
+    position: fixed;
+    top: 5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    width: 80%;
+    max-width: 1024px;
+    min-width: 230px;
+    height: 100vh;
+    align-self: center;
+    padding: 10px 50px;
+    background-color: var(--yellow);
+    color: var(--blue);
+    border: 5px solid var(--blue);
+    /* box-shadow: 5px 5px 0px 0px var(--blue); */
+    text-align: left;
+    overflow: scroll;
+}
+
+
+/*cursor*/
+#cursorText {
+    position: absolute;
+    pointer-events: none; /* Impede que o texto interfira nos elementos clicáveis */
+    font-size: 16px;
+    color: var(--azul);
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    display: none; /* Inicialmente, invisível */
+    white-space: nowrap; /* Para garantir que o texto não quebre em várias linhas */
+  }
+  
+  

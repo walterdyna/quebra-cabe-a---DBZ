@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <title>Quebra-Cabeça Dyna</title>
+    <script defer src="./scripts/index.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button id="helpButton" class="headerButton" 
+                onclick="document.querySelector('#help').style.display = 'flex'">
+                COMO JOGAR?
+            </button>
+            <h1>Quebre a cabeça</h1>
+            <p class="visitade">Você é o visitante número: <span id="visit-count">0</span></p>
+        </header>
+        <div id="alert">
+            VOCÊ JÁ COMPLETOU O DESAFIO!
+        </div>
+        <main id="board">
+        </main>
+        <button id="play" onclick="tab.shuffle()" >
+            CLIQUE PARA EMBARALHAR! <br/>
+            DEPOIS AGUARDE!
+        </button>
+
+        <div id="movesCounter">
+            
+        </div>
+
+        <div id="finished" class="finished">
+            QUEBRA-CABEÇA COMPLETADO!
+        </div>
+
+        <div id="help">
+            <h2>COMO JOGAR?</h2>
+            
+            <button id="closeHelp" 
+                onclick="document.querySelector('#help').style.display = 'none'" class="headerButton">
+                Fechar
+            </button>
+            
+            <text>
+                Seu objetivo é resolver o quebra cabeça.
+                <ul>
+                    <li>
+                        Primeiro: Clique "CLIQUE PARA EMBARALHAR! DEPOIS AGUARDE!"
+                    </li>
+                  
+                    Assim que o quebra-cabeça for embaralhado você poderá resolvê-lo. Então:
+                    <li>
+                        Segundo: clique no bloco que você deseja mover para o espaço vazio, vá fazendo isso até conseguir a imagem perfeita.
+                        Que hoje é:<br/>
+                        <img alt='Imagem desejada' width="240px" id="imgHelp"class='imgBlock' src = ''/>
+                    </li>
+
+                    <li>Fale com o Dev: <a href="https://github.com/walterdyna">Github</li>
+                    <li>Fale com o Dev: <a href="https://www.linkedin.com/in/walterdyna/">Linkedin</li>
+                    <li>Fale com o Dev: <a href="https://www.instagram.com/walterdyna/">Instagram</li>
+                    <li>Fale com o Dev: <a href="https://wa.me/5527999647264?text=Fale%20com%20o%20DEV">WhatsApp</li>
+                    
+                </ul>
+
+            </text>
+            
+
+
+        </div>
+
+
+    </div>
+
+    <div id="cursorText">AlexDyna</div>
+
+</body>
+</html>
