@@ -26,10 +26,8 @@ Sinta-se à vontade para contribuir! Você pode entrar em contato com o desenvol
 - [WhatsApp](https://wa.me/5527999647264?text=Fale%20com%20o%20DEV)
 
 ## Licença
-Este projeto está licenciado sob a [sua licença preferida].
+Este projeto está licenciado sob a [Dyna].
 
-## Demonstração
-![Imagem desejada do quebra-cabeça](link-para-imagem.jpg)
 
 ## Instalação
 Para executar o projeto localmente, siga os passos abaixo:
@@ -38,5 +36,3 @@ Para executar o projeto localmente, siga os passos abaixo:
    ```bash
    git clone https://seu-repositorio-url.git
 
-Agradecimentos
-Agradecemos a todos os visitantes e jogadores! Divirta-se jogando!
