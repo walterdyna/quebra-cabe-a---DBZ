@@ -34,5 +34,5 @@ Para executar o projeto localmente, siga os passos abaixo:
 
 1. Clone o repositório:
    ```bash
-   git clone https://seu-repositorio-url.git
+   git clone https://github.com/walterdyna/quebra-cabe-a---DBZ
 
